@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - MedTracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>MedTracker</h1>
+      <nav>
+        <a href="index.html" class="active">Dashboard</a>
+        <a href="records.html">Records</a>
+        <a href="add.html">Add</a>
+        <a href="edit.html">Edit</a>
+      </nav>
+    </header>
+
+    <h2>Dashboard</h2>
+
+    <div class="summary">
+      <strong>3</strong> medications &nbsp;|&nbsp;
+      <strong>1700 mg</strong> daily total &nbsp;|&nbsp;
+      <strong>6</strong> doses per day
+    </div>
+
+    <h2>Quick Actions</h2>
+    <p>
+      <a href="records.html" class="btn">View Records</a>
+      <a href="add.html" class="btn">Add Medication</a>
+      <a href="edit.html" class="btn">Edit Medication</a>
+    </p>
+
+    <h2 style="margin-top: 25px;">Recent Medications</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Dosage</th>
+          <th>Frequency</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ibuprofen</td>
+          <td>200 mg</td>
+          <td>2x daily</td>
+          <td>Painkiller</td>
+        </tr>
+        <tr>
+          <td>Amoxicillin</td>
+          <td>500 mg</td>
+          <td>3x daily</td>
+          <td>Antibiotic</td>
+        </tr>
+        <tr>
+          <td>Vitamin D</td>
+          <td>1000 mg</td>
+          <td>1x daily</td>
+          <td>Vitamin</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

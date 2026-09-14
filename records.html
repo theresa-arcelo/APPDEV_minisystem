@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Records - MedTracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>MedTracker</h1>
+      <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="records.html" class="active">Records</a>
+        <a href="add.html">Add</a>
+        <a href="edit.html">Edit</a>
+      </nav>
+    </header>
+
+    <h2>All Medication Records</h2>
+
+    <div class="summary">
+      Daily total dosage: <strong>1710 mg</strong>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Dosage</th>
+          <th>Frequency</th>
+          <th>Start Date</th>
+          <th>Category</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ibuprofen</td>
+          <td>200 mg</td>
+          <td>2x daily</td>
+          <td>2025-03-15</td>
+          <td>Painkiller</td>
+          <td class="actions">
+            <a href="edit.html">Edit</a>
+            <a href="records.html">Delete</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Amoxicillin</td>
+          <td>500 mg</td>
+          <td>3x daily</td>
+          <td>2025-03-12</td>
+          <td>Antibiotic</td>
+          <td class="actions">
+            <a href="edit.html">Edit</a>
+            <a href="records.html">Delete</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Vitamin D</td>
+          <td>1000 mg</td>
+          <td>1x daily</td>
+          <td>2025-03-10</td>
+          <td>Vitamin</td>
+          <td class="actions">
+            <a href="edit.html">Edit</a>
+            <a href="records.html">Delete</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Cetirizine</td>
+          <td>10 mg</td>
+          <td>1x daily</td>
+          <td>2025-03-08</td>
+          <td>Allergy</td>
+          <td class="actions">
+            <a href="edit.html">Edit</a>
+            <a href="records.html">Delete</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="note">Click Edit or Delete to modify a record.</p>
+  </div>
+</body>
+</html>

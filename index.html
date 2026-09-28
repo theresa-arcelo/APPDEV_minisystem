@@ -20,10 +20,8 @@
 
     <h2>Dashboard</h2>
 
-    <div class="summary">
-      <strong>3</strong> medications &nbsp;|&nbsp;
-      <strong>1700 mg</strong> daily total &nbsp;|&nbsp;
-      <strong>6</strong> doses per day
+    <div class="summary" id="summary">
+      Loading...
     </div>
 
     <h2 style="margin-top: 25px;">Recent Medications</h2>
@@ -37,30 +35,13 @@
           <th>Category</th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td>Ibuprofen</td>
-          <td>200 mg</td>
-          <td>3x daily</td>
-          <td>7 days</td>
-          <td>Painkiller</td>
-        </tr>
-        <tr>
-          <td>Amoxicillin</td>
-          <td>500 mg</td>
-          <td>3x daily</td>
-          <td>10 days</td>
-          <td>Antibiotic</td>
-        </tr>
-        <tr>
-          <td>Vitamin D</td>
-          <td>1000 mg</td>
-          <td>1x daily</td>
-          <td>30 days</td>
-          <td>Vitamin</td>
-        </tr>
-      </tbody>
+      <tbody id="medTable"></tbody>
     </table>
   </div>
+
+  <script src="script.js"></script>
+  <script>
+    loadDashboard();
+  </script>
 </body>
 </html>

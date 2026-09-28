@@ -153,3 +153,11 @@ button:hover, .btn:hover {
   margin-bottom: 15px;
   font-size: 14px;
 }
+
+.summary {
+  background: #eee;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 14px;
+}

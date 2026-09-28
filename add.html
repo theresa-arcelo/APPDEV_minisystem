@@ -20,40 +20,40 @@
 
     <h2>Add New Medication</h2>
 
-    <form action="records.html" method="get">
+    <form onsubmit="addMedication(); return false;">
       <div class="form-group">
         <label>Medication Name</label>
-        <input type="text" placeholder="e.g. Ibuprofen">
+        <input type="text" id="name" placeholder="e.g. Ibuprofen">
       </div>
 
       <div class="form-group">
         <label>Dosage (mg)</label>
-        <input type="number" placeholder="200">
+        <input type="number" id="dosage" placeholder="200">
       </div>
 
       <div class="form-group">
         <label>Frequency (per day)</label>
-        <input type="number" placeholder="3">
+        <input type="number" id="frequency" placeholder="3">
       </div>
 
       <div class="form-group">
         <label>Duration (days)</label>
-        <input type="number" min="1" placeholder="7">
+        <input type="number" id="duration" min="1" placeholder="7">
       </div>
 
       <div class="form-group">
         <label>Start Date</label>
-        <input type="date">
+        <input type="date" id="start_date">
       </div>
 
       <div class="form-group">
         <label>Category</label>
-        <select>
-          <option>Painkiller</option>
-          <option>Antibiotic</option>
-          <option>Vitamin</option>
-          <option>Allergy</option>
-          <option>Other</option>
+        <select id="category">
+          <option value="Painkiller">Painkiller</option>
+          <option value="Antibiotic">Antibiotic</option>
+          <option value="Vitamin">Vitamin</option>
+          <option value="Allergy">Allergy</option>
+          <option value="Other">Other</option>
         </select>
       </div>
 
@@ -61,5 +61,7 @@
       <a href="records.html" class="btn btn-secondary">Cancel</a>
     </form>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

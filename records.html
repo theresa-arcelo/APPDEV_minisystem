@@ -20,13 +20,14 @@
 
     <h2>All Medication Records</h2>
 
-    <div class="summary">
-      Daily total dosage: <strong>1710 mg</strong>
+    <div class="summary" id="summary">
+      Loading...
     </div>
 
     <table>
       <thead>
         <tr>
+          <th>ID</th>
           <th>Name</th>
           <th>Dosage</th>
           <th>Frequency</th>
@@ -36,59 +37,15 @@
           <th>Actions</th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td>Ibuprofen</td>
-          <td>200 mg</td>
-          <td>3x daily</td>
-          <td>7 days</td>
-          <td>2025-03-15</td>
-          <td>Painkiller</td>
-          <td class="actions">
-            <a href="edit.html">Edit</a>
-            <a href="records.html">Delete</a>
-          </td>
-        </tr>
-        <tr>
-          <td>Amoxicillin</td>
-          <td>500 mg</td>
-          <td>3x daily</td>
-          <td>10 days</td>
-          <td>2025-03-12</td>
-          <td>Antibiotic</td>
-          <td class="actions">
-            <a href="edit.html">Edit</a>
-            <a href="records.html">Delete</a>
-          </td>
-        </tr>
-        <tr>
-          <td>Vitamin D</td>
-          <td>1000 mg</td>
-          <td>1x daily</td>
-          <td>30 days</td>
-          <td>2025-03-10</td>
-          <td>Vitamin</td>
-          <td class="actions">
-            <a href="edit.html">Edit</a>
-            <a href="records.html">Delete</a>
-          </td>
-        </tr>
-        <tr>
-          <td>Cetirizine</td>
-          <td>10 mg</td>
-          <td>1x daily</td>
-          <td>14 days</td>
-          <td>2025-03-08</td>
-          <td>Allergy</td>
-          <td class="actions">
-            <a href="edit.html">Edit</a>
-            <a href="records.html">Delete</a>
-          </td>
-        </tr>
-      </tbody>
+      <tbody id="medTable"></tbody>
     </table>
 
     <p class="note">Click Edit or Delete to modify a record.</p>
   </div>
+
+  <script src="script.js"></script>
+  <script>
+    loadMedications();
+  </script>
 </body>
 </html>
